@@ -19,7 +19,6 @@ import org.json.JSONObject;
 
 import jquery.datatables.model.Company;
 import jquery.datatables.model.DataRepository;
-import jquery.datatables.controller.DataTableRequestParam;
 
 /**
  * CompanyServlet provides data to the JQuery DataTables
@@ -34,6 +33,7 @@ public class CompanyDataTableAjaxDataSourceServlet extends HttpServlet {
      * response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 
         final DataTableRequestParam param = DataTablesParamUtility.getParam(request);
 
